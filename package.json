@@ -1,0 +1,18 @@
+{
+  "name": "rest_node_express",
+  "version": "1.0.0",
+  "description": "Learning how to build RESTful Services with Node & Express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arnold Okoth",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.2.1",
+    "mongoose": "^4.7.7"
+  }
+}
