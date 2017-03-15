@@ -4,7 +4,8 @@
   "description": "Learning how to build RESTful Services with Node & Express",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp serve"
   },
   "author": "Arnold Okoth",
   "license": "MIT",
