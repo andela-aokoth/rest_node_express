@@ -4,9 +4,9 @@ var bodyParser = require('body-parser');
 var db;
 
 if (process.env.ENV == 'Test') {
-    db  = mongoose.connect('mongodb://localhost/bookAPI_test');
+    db  = mongoose.connect('mongodb://mongo:27017/bookAPI_test');
 } else {
-    db  = mongoose.connect('mongodb://localhost/bookAPI');
+    db  = mongoose.connect('mongodb://mongo:27017/bookAPI');
 }
 
 var Book = require('./models/bookModel');
@@ -19,7 +19,6 @@ var bookRouter = require('./routes/bookRoutes')();
 var authorRouter = require('./routes/authorRoutes')();
 app.use('/api/v0.1/books', bookRouter);
 app.use('/api/v0.1/authors', authorRouter);
-
 
 app.get('/', function(req, res) {
     res.send({message: 'Welcome to the API'});
